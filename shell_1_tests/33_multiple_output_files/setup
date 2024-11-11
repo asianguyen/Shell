@@ -1,0 +1,9 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+test_dir=$(dirname "$0")
+cp $test_dir/othello.txt .
+echo "cs0330 shell 1 append test" > redirect.txt
+
+# expected output
+touch output

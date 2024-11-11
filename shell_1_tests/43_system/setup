@@ -1,0 +1,12 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+# expected output
+touch output
+/bin/ls > output
+banner cs0330 shell 1 system test >> output
+whoami | xargs banner >> output
+whoami >> output
+echo "cs0330 shell 1 system test" >> output
+banner appending >> output
+echo "cs0330 shell 1" >> output

@@ -1,0 +1,9 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+STR="cs0330 shell 1 append test"
+echo $STR > redirect.txt
+
+# expected output
+echo $STR > output
+banner cs0330 shell 1 test >> output

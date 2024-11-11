@@ -1,0 +1,8 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+STR="cs0330 shell_1 simple input redirection test"
+echo $STR > redirect.txt
+
+# expected output
+echo $STR > output

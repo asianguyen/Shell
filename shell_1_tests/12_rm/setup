@@ -1,0 +1,14 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+if [[ -e 33tmp_file.txt ]]; then
+	rm 33tmp_file.txt
+fi
+
+test_dir=$(dirname $0)
+cp $test_dir/exist_script .
+chmod 777 exist_script
+
+# expected output
+echo exists > output
+echo "doesn't exist" >> output

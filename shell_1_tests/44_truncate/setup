@@ -1,0 +1,5 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+# expected output
+echo "cs0330 green shell" > output

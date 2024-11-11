@@ -1,0 +1,6 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+# expected output
+echo "cs0330 shell" > output
+echo "1 tests" >> output

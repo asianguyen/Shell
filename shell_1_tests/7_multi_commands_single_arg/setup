@@ -1,0 +1,11 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+STR="cs0330 test file"
+echo $STR > tmp_file.txt
+
+# expected output
+echo qwerty > output
+echo $STR >> output
+banner cs0330 >> output
+echo hi >> output

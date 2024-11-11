@@ -1,0 +1,7 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+# expected output
+pwd > output
+cd ../
+pwd >> $1/output

@@ -1,0 +1,4 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+banner cs0330 > output

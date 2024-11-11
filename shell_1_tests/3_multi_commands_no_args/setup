@@ -1,0 +1,14 @@
+#!/bin/bash
+cd $1  # move to directory that needs setting up
+
+test_dir=$(dirname "$0")
+
+cp $test_dir/food .
+chmod 777 food
+cp $test_dir/food.txt .
+
+# expected output
+touch output
+ls > output
+pwd >> output
+./food >> output
